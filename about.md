@@ -4,7 +4,7 @@ title: About
 ---
 
 
-本博客由自称“西”/“西象”的不知名互联网用户所运行。
+本博客由不知名互联网用户所运行。
 
 评论功能由 _[utterances](https://utteranc.es/)_ 驱动，需要登录Github账号。
 
