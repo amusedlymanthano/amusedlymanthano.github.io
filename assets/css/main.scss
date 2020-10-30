@@ -3,5 +3,6 @@
 
 @font-face {
 	font-family: 'David Libre', serif;
+	src: url("/assets/DavidLibre-Regular.ttf");
 }
 @import "base", "typography", "header", "post", "home", "footer", "paginator", "archive", "scrollbar", "contact", "related-posts", "mobile";
