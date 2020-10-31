@@ -12,4 +12,4 @@ MAT2018年新考纲中加入了binomial probabilities。迄今为止，还没有
 
 __1.条件概率__
 
-条件概率，写作 $P(A|B)$
+条件概率，写作 $P(A \vert B)$
