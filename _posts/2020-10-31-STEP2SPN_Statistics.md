@@ -36,11 +36,7 @@ __2.排列与组合__
 
 $$ {}^nP_r = n \times (n-1) \times (n-2) \times ... \times (n-r+1) = \frac {n!} {(n-r)!} $$
 
-组合（**C**ombination 或说 **C**hoosing），表示为 $ {}^nC_r $ 或 
-
-$$\begin{pmatrix} n \\ r \end{pmatrix}$$
-
-意为从n个彼此不相同的元素中选出r个的方式——注意**顺序无关紧要**。组合的计算式为：
+组合（**C**ombination 或说 **C**hoosing），表示为 $ {}^nC_r $ 或 $$\begin{pmatrix} n \\ r \end{pmatrix}$$ ，意为从n个彼此不相同的元素中选出r个的方式——注意**顺序无关紧要**。组合的计算式为：
 
 $$ {}^nC_r = \frac {n \times (n-1) \times (n-2) \times ... \times (n-r+1)} {r \times (r-1) \times (r-2) \times ... \times 1} = \frac {n!} {r!(n-r)!} $$
 
