@@ -52,3 +52,30 @@ $$ x_t = 2t - x_0 $$
 
 既然都讲到这儿了，我们顺便来看一看函数的**自对称**。如果函数 $y=f(x)$ 满足 $f(x)=f(2t-x)$ ，就说这个函数关于直线 $x=t$ 对称。我们可以把x换成(t+x)，得到这个式子的另一个表达： $f(t+x)=f(t-x)$ 。
 
+对应的题目不难，我就不写了。
+
+------
+
+__2. 微分__
+
+（2013, 1E）
+
+*The expression*
+
+$$ \frac{\mathrm{d^2} }{\mathrm{d} x^2} \left(2x-1\right)^4 \left(1-x\right)^5 +  \frac{\mathrm{d} }{\mathrm{d} x} \left(2x+1\right)^4 \left(3x^2-2\right)^2 $$
+
+*is a polynomial of degree*
+
+*(a) 9; (b) 8; (c) 7; (d) less than 7.*
+
+这类题（……表达式是几次的多项式）已经考过好几次了，唯一的重点就是**整理出来要看最高项会不会相互抵消**。如果不会相互抵消，则次数即为最高次项的次数；如果相互抵消了，则次数低于最高次项的次数。
+
+我们可以发现 $\left(2x-1\right)^4 \left(1-x\right)^5$ 的最高次部分是 $\left(2x\right)^4 \left(-x\right)^5 = 16x^4 \times \left(-x^5\right) = - 16 x^9 $ ，而 $\left(2x+1\right)^4 \left(3x^2-2\right)^2 = \left(2x\right)^4 \left(3x^2\right)^2 = 16x^4 \times 9 x^4 = 144 x^8 $ 。
+
+我们有
+
+$$ \frac{\mathrm{d^2} }{\mathrm{d} x^2}  \left(- 16 x^9 \right) =  \frac{\mathrm{d} }{\mathrm{d} x} \left(- 144 x^8 \right) = \left(- 144 \times 8 x^7 \right) $$
+
+$$ \frac{\mathrm{d} }{\mathrm{d} x} 144 x^8 = 144 \times 8 x^7 $$
+
+所以两边最高项相加相消，最高次项小于7，这道题选择(d).
