@@ -68,7 +68,7 @@ $$ \frac{\mathrm{d^2} }{\mathrm{d} x^2} \left(2x-1\right)^4 \left(1-x\right)^5 +
 
 *(a) 9; (b) 8; (c) 7; (d) less than 7.*
 
-这类题（……表达式是几次的多项式）已经考过好几次了，唯一的重点就是**整理出来要看最高项会不会相互抵消**。如果不会相互抵消，则次数即为最高次项的次数；如果相互抵消了，则次数低于最高次项的次数。
+这类题（……表达式是几次的多项式）已经考过好几次了，唯一的重点就是**要看整理之后最高项会不会相互抵消**。如果不会相互抵消，则次数即为最高次项的次数；如果相互抵消了，则次数低于最高次项的次数。
 
 我们可以发现 $\left(2x-1\right)^4 \left(1-x\right)^5$ 的最高次部分是 $\left(2x\right)^4 \left(-x\right)^5 = 16x^4 \times \left(-x^5\right) = - 16 x^9 $ ，而 $\left(2x+1\right)^4 \left(3x^2-2\right)^2 = \left(2x\right)^4 \left(3x^2\right)^2 = 16x^4 \times 9 x^4 = 144 x^8 $ 。
 
@@ -79,3 +79,81 @@ $$ \frac{\mathrm{d^2} }{\mathrm{d} x^2}  \left(- 16 x^9 \right) =  \frac{\mathrm
 $$ \frac{\mathrm{d} }{\mathrm{d} x} 144 x^8 = 144 \times 8 x^7 $$
 
 所以两边最高项相加相消，最高次项小于7，这道题选择(d).
+
+------
+
+__3.对数__
+
+（2013, 1F）
+
+*Three **positive** numbers a, b, c satisfy* $ \log_b {a} = 2, \log_b {(c − 3)} = 3, \log_a {(c + 5)} = 2 $. *This information*
+
+*(a) specifies a uniquely.*
+
+*(b) is satisfied by two values of a.*
+
+*(c) is satisfied by infinitely many values of a.*
+
+*(d) is contradictory.*
+
+这个结构的题也考过至少两次了。我们把三个对数式重写成幂：
+
+$$b^2=a{\text{,  }} (I)$$ 
+
+$$b^3=c-3{\text{,  }} (II)$$ 
+
+$$a^2=c+5{\text{,  }} (III)$$
+
+$(I)^2$ 代入 $(III)$ 可得
+
+$$ b^4 = c+5 {\text{,  }} (IV)$$
+
+$ (IV) - (II) $ 可得
+
+$$ b^4-b^3-8=0 $$
+
+很容易看出一个可能的正数解是 $b=2$ 。这种情况下，$a=b^2=4$ ， $c=4^2-5=11$ ，确定了**一个**a的值。 
+
+接下来，考虑
+
+$$ f(x) = b^3 \left( b-1 \right) = 8 $
+
+我们容易看出 $f(x)$ 在 $(-\infty, 0), (0,1)$ 和 $(1, \infty)$ 上单调。所以， $b=2$ 是 $(1, \infty)$ 上的唯一的解。因为题干要求只考虑正数，我们只需要再考虑区间 $(0,1)$ 。不难看出， $f(x)$ 在这个区间上是负的，所以 $f(x)=8$ 在这个区间上没有解。我们得出结论： $a=4$ , $b=2$ , $c=11$ 是这个方程组唯一的正数解。答案选(a).
+
+**注意在数学的语境里，*unique*相当于*only one*.**
+
+&nbsp;  
+
+(2013, 1J)
+
+*For a real number x we denote by* $[x]$ *the largest integer less than or equal to x.*
+
+*Let n be a natural number. The integral*
+
+$$ \intop\nolimits_{0}^{n} \left[ 2^x \right] \operatorname{d} {x} $$
+
+*equals*
+
+*(a)* $\log_2 {\left( \left( 2^n − 1 \right) ! \right)}$ *, (b)* $ n 2^n − \log_2 \left( \left(2^n \right)! \right) $ *, (c)* $n 2^n$ *, (d)* $\log_2 \left( \left(2^n \right)! \right)$ *
+
+*where* $k! = 1 \times 2 \times 3 \times... \times k$ *for a positive integer k.*
+
+这题其实相当好玩，画个图可能会更好理解一点。这题很重要的一个思路是，**从y轴倒着想回x轴来**。这是这道题的Geogebra的链接：[prqt9awz](https://geogebra.org/classic/prqt9awz)。根据这样的思路，把不同颜色的矩形加起来（注意这些矩形的纵宽都为1），我们有
+
+$$ \intop\nolimits_{0}^{n} \left[ 2^x \right] \operatorname{d} {x} = $$
+
+$$  = (n-\log_2(1)) + (n-\log_2(2)) + (n-\log_2(3))+ (n-\log_2(4)) + ... + (n-\log_2(2^{n}-1)) $$
+
+$$ = n(2^{n}-1)-\log_2{(2^{n}-1)!} $$
+
+$$ = n 2^{n} - (n + \log_2{(2^{n}-1)!} $$
+
+$$ = n 2^{n} - \left( \log_2{2^n} + \log_2{(2^{n}-1)!} \right) $$
+
+$$ = n 2^n − \log_2 \left( \left(2^n \right)! \right) $$
+
+所以选(b).
+
+------
+
+
