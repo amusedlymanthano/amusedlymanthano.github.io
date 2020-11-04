@@ -140,7 +140,7 @@ $$ \intop\nolimits_{0}^{n} \left[ 2^x \right] \operatorname{d} {x} $$
 
 这题其实相当好玩，画个图可能会更好理解一点。这题很重要的一个思路是，**从y轴倒着想回x轴来**。这是这道题的Geogebra的链接：[prqt9awz](https://geogebra.org/classic/prqt9awz)。根据这样的思路，把不同颜色的矩形加起来（注意这些矩形的纵宽都为1），我们有
 
-$$ \intop\nolimits_{0}^{n} \left[ 2^x \right] \operatorname{d} {x} = $$
+$$ \intop\nolimits_{0}^{n} \left[ 2^x \right] \operatorname{d} {x} $$
 
 $$  = (n-\log_2(1)) + (n-\log_2(2)) + (n-\log_2(3))+ (n-\log_2(4)) + ... + (n-\log_2(2^{n}-1)) $$
 
